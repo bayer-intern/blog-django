@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def render_index(request):
+    nome = 'Gabriel'
+
+    if nome == 'Gabriel':
+        return render(request, 'index.html', {'nome': nome})
